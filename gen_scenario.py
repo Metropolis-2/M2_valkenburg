@@ -31,8 +31,8 @@ def main():
     graph_path = path.join(
         path.dirname(__file__),
         'gis_data',
-        'side_vienna',
-        "test_graph.graphml",
+        'cute_vienna',
+        "valk_graph.graphml",
     )
     G = ox.load_graphml(graph_path)
 

@@ -3,7 +3,7 @@ import geopandas as gpd
 import osmnx as ox
 import momepy as mm
 
-gdf = gpd.read_file('gis_data/side_vienna/valk_simp_streets.gpkg')
+gdf = gpd.read_file('gis_data/cute_vienna/valk_streets.gpkg')
 
 # %%
 G = mm.gdf_to_nx(gdf)
@@ -32,10 +32,10 @@ G = ox.graph_from_gdfs(points, lines)
 G = ox.distance.add_edge_lengths(G)
 
 # save graphml
-ox.save_graphml(G, 'gis_data/side_vienna/test_graph.graphml')
+ox.save_graphml(G, 'gis_data/cute_vienna/valk_graph.graphml')
 
 # save gpkg
-ox.save_graph_geopackage(G, 'gis_data/side_vienna/test_graph.gpkg')
+ox.save_graph_geopackage(G, 'gis_data/cute_vienna/valk_graph.gpkg')
 
 
 
