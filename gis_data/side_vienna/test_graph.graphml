@@ -1,0 +1,970 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d8" for="edge" attr.name="length" attr.type="string" />
+  <key id="d7" for="edge" attr.name="node_end" attr.type="string" />
+  <key id="d6" for="edge" attr.name="node_start" attr.type="string" />
+  <key id="d5" for="edge" attr.name="mm_len" attr.type="string" />
+  <key id="d4" for="edge" attr.name="geometry" attr.type="string" />
+  <key id="d3" for="node" attr.name="y" attr.type="string" />
+  <key id="d2" for="node" attr.name="x" attr.type="string" />
+  <key id="d1" for="node" attr.name="nodeID" attr.type="string" />
+  <key id="d0" for="graph" attr.name="crs" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="0">
+      <data key="d1">0</data>
+      <data key="d2">4.41362974289814</data>
+      <data key="d3">52.16856165285732</data>
+    </node>
+    <node id="1">
+      <data key="d1">1</data>
+      <data key="d2">4.413596696023141</data>
+      <data key="d3">52.168515331568365</data>
+    </node>
+    <node id="31">
+      <data key="d1">31</data>
+      <data key="d2">4.4134689985231415</data>
+      <data key="d3">52.168462542136986</data>
+    </node>
+    <node id="26">
+      <data key="d1">26</data>
+      <data key="d2">4.413668656648142</data>
+      <data key="d3">52.1685496698004</data>
+    </node>
+    <node id="28">
+      <data key="d1">28</data>
+      <data key="d2">4.413713531648141</data>
+      <data key="d3">52.16857191464869</data>
+    </node>
+    <node id="2">
+      <data key="d1">2</data>
+      <data key="d2">4.41361812727314</data>
+      <data key="d3">52.16846510223428</data>
+    </node>
+    <node id="14">
+      <data key="d1">14</data>
+      <data key="d2">4.413546128523141</data>
+      <data key="d3">52.16844934322693</data>
+    </node>
+    <node id="30">
+      <data key="d1">30</data>
+      <data key="d2">4.4136929622731405</data>
+      <data key="d3">52.16848854981797</data>
+    </node>
+    <node id="53">
+      <data key="d1">53</data>
+      <data key="d2">4.413650118523141</data>
+      <data key="d3">52.168406181864526</data>
+    </node>
+    <node id="3">
+      <data key="d1">3</data>
+      <data key="d2">4.4133230847731415</data>
+      <data key="d3">52.168372451608406</data>
+    </node>
+    <node id="4">
+      <data key="d1">4</data>
+      <data key="d2">4.413246173523142</data>
+      <data key="d3">52.16838328788052</data>
+    </node>
+    <node id="5">
+      <data key="d1">5</data>
+      <data key="d2">4.413386132273142</data>
+      <data key="d3">52.16836359051628</data>
+    </node>
+    <node id="40">
+      <data key="d1">40</data>
+      <data key="d2">4.41333794477314</data>
+      <data key="d3">52.16842939464244</data>
+    </node>
+    <node id="8">
+      <data key="d1">8</data>
+      <data key="d2">4.4133123397731415</data>
+      <data key="d3">52.16834354128811</data>
+    </node>
+    <node id="9">
+      <data key="d1">9</data>
+      <data key="d2">4.41323478539814</data>
+      <data key="d3">52.16835451800792</data>
+    </node>
+    <node id="37">
+      <data key="d1">37</data>
+      <data key="d2">4.413252444773141</data>
+      <data key="d3">52.16845777991998</data>
+    </node>
+    <node id="7">
+      <data key="d1">7</data>
+      <data key="d2">4.413443267898142</data>
+      <data key="d3">52.16835578522025</data>
+    </node>
+    <node id="42">
+      <data key="d1">42</data>
+      <data key="d2">4.413392995398141</data>
+      <data key="d3">52.16841089952779</data>
+    </node>
+    <node id="10">
+      <data key="d1">10</data>
+      <data key="d2">4.413375476023141</data>
+      <data key="d3">52.16833473512686</data>
+    </node>
+    <node id="6">
+      <data key="d1">6</data>
+      <data key="d2">4.413536338523142</data>
+      <data key="d3">52.168343473989864</data>
+    </node>
+    <node id="52">
+      <data key="d1">52</data>
+      <data key="d2">4.4135778303981406</data>
+      <data key="d3">52.168347714384</data>
+    </node>
+    <node id="13">
+      <data key="d1">13</data>
+      <data key="d2">4.413434337898142</data>
+      <data key="d3">52.16833000084479</data>
+    </node>
+    <node id="41">
+      <data key="d1">41</data>
+      <data key="d2">4.413448373523142</data>
+      <data key="d3">52.16840353827994</data>
+    </node>
+    <node id="47">
+      <data key="d1">47</data>
+      <data key="d2">4.413276925398142</data>
+      <data key="d3">52.168247284753996</data>
+    </node>
+    <node id="39">
+      <data key="d1">39</data>
+      <data key="d2">4.41320051477314</data>
+      <data key="d3">52.168248086321874</data>
+    </node>
+    <node id="43">
+      <data key="d1">43</data>
+      <data key="d2">4.413392942898143</data>
+      <data key="d3">52.16825743964066</data>
+    </node>
+    <node id="11">
+      <data key="d1">11</data>
+      <data key="d2">4.413581415398141</data>
+      <data key="d3">52.16834351022738</data>
+    </node>
+    <node id="12">
+      <data key="d1">12</data>
+      <data key="d2">4.41351058977314</data>
+      <data key="d3">52.16833038218435</data>
+    </node>
+    <node id="54">
+      <data key="d1">54</data>
+      <data key="d2">4.413640039773141</data>
+      <data key="d3">52.16831945639604</data>
+    </node>
+    <node id="44">
+      <data key="d1">44</data>
+      <data key="d2">4.41347972852314</data>
+      <data key="d3">52.168286895378806</data>
+    </node>
+    <node id="32">
+      <data key="d1">32</data>
+      <data key="d2">4.413448645398141</data>
+      <data key="d3">52.16828135905018</data>
+    </node>
+    <node id="15">
+      <data key="d1">15</data>
+      <data key="d2">4.413712159148142</data>
+      <data key="d3">52.16823920306968</data>
+    </node>
+    <node id="16">
+      <data key="d1">16</data>
+      <data key="d2">4.413769112898141</data>
+      <data key="d3">52.1682385274497</data>
+    </node>
+    <node id="17">
+      <data key="d1">17</data>
+      <data key="d2">4.413663786648143</data>
+      <data key="d3">52.168225775482945</data>
+    </node>
+    <node id="23">
+      <data key="d1">23</data>
+      <data key="d2">4.413676243523141</data>
+      <data key="d3">52.168301817009294</data>
+    </node>
+    <node id="51">
+      <data key="d1">51</data>
+      <data key="d2">4.413797747273142</data>
+      <data key="d3">52.16816517922077</data>
+    </node>
+    <node id="34">
+      <data key="d1">34</data>
+      <data key="d2">4.41380564664814</data>
+      <data key="d3">52.168225237311184</data>
+    </node>
+    <node id="20">
+      <data key="d1">20</data>
+      <data key="d2">4.413571801648142</data>
+      <data key="d3">52.16819585840873</data>
+    </node>
+    <node id="48">
+      <data key="d1">48</data>
+      <data key="d2">4.413664975398142</data>
+      <data key="d3">52.16818154631018</data>
+    </node>
+    <node id="18">
+      <data key="d1">18</data>
+      <data key="d2">4.413299278523142</data>
+      <data key="d3">52.16817238106579</data>
+    </node>
+    <node id="19">
+      <data key="d1">19</data>
+      <data key="d2">4.413472926648141</data>
+      <data key="d3">52.16817406945464</data>
+    </node>
+    <node id="21">
+      <data key="d1">21</data>
+      <data key="d2">4.413511587898142</data>
+      <data key="d3">52.16819244862299</data>
+    </node>
+    <node id="45">
+      <data key="d1">45</data>
+      <data key="d2">4.413522519773142</data>
+      <data key="d3">52.16813969191108</data>
+    </node>
+    <node id="46">
+      <data key="d1">46</data>
+      <data key="d2">4.413573135398141</data>
+      <data key="d3">52.16819343803748</data>
+    </node>
+    <node id="22">
+      <data key="d1">22</data>
+      <data key="d2">4.413678549773142</data>
+      <data key="d3">52.1683020280776</data>
+    </node>
+    <node id="55">
+      <data key="d1">55</data>
+      <data key="d2">4.413668626648141</data>
+      <data key="d3">52.16831530727866</data>
+    </node>
+    <node id="24">
+      <data key="d1">24</data>
+      <data key="d2">4.413762701648141</data>
+      <data key="d3">52.168441096651925</data>
+    </node>
+    <node id="25">
+      <data key="d1">25</data>
+      <data key="d2">4.413701431648141</data>
+      <data key="d3">52.168518296148875</data>
+    </node>
+    <node id="57">
+      <data key="d1">57</data>
+      <data key="d2">4.413774149773142</data>
+      <data key="d3">52.168379280536435</data>
+    </node>
+    <node id="27">
+      <data key="d1">27</data>
+      <data key="d2">4.413760489773141</data>
+      <data key="d3">52.16853010872252</data>
+    </node>
+    <node id="29">
+      <data key="d1">29</data>
+      <data key="d2">4.41397506477314</data>
+      <data key="d3">52.16837614419177</data>
+    </node>
+    <node id="33">
+      <data key="d1">33</data>
+      <data key="d2">4.413892372898142</data>
+      <data key="d3">52.1682849090286</data>
+    </node>
+    <node id="36">
+      <data key="d1">36</data>
+      <data key="d2">4.4139287516481405</data>
+      <data key="d3">52.16826405257936</data>
+    </node>
+    <node id="38">
+      <data key="d1">38</data>
+      <data key="d2">4.413383893523142</data>
+      <data key="d3">52.16848062613876</data>
+    </node>
+    <node id="35">
+      <data key="d1">35</data>
+      <data key="d2">4.413840869148141</data>
+      <data key="d3">52.168193299484756</data>
+    </node>
+    <node id="50">
+      <data key="d1">50</data>
+      <data key="d2">4.41382717352314</data>
+      <data key="d3">52.16816203766611</data>
+    </node>
+    <node id="49">
+      <data key="d1">49</data>
+      <data key="d2">4.413631312898142</data>
+      <data key="d3">52.16810519018356</data>
+    </node>
+    <node id="56">
+      <data key="d1">56</data>
+      <data key="d2">4.4137225485231415</data>
+      <data key="d3">52.16837133389049</data>
+    </node>
+    <edge source="0" target="1" id="0">
+      <data key="d4">LINESTRING (4.41362974289814 52.16856165285732, 4.413596696023141 52.168515331568365)</data>
+      <data key="d5">9.176809656706643</data>
+      <data key="d6">0</data>
+      <data key="d7">1</data>
+      <data key="d8">5.622</data>
+    </edge>
+    <edge source="0" target="31" id="0">
+      <data key="d4">LINESTRING (4.41362974289814 52.16856165285732, 4.413610412898142 52.16856627283563, 4.413552764148141 52.16856267976878, 4.413514648523141 52.16856602358752, 4.413507864148142 52.168506919135524, 4.4134689985231415 52.168462542136986)</data>
+      <data key="d5">32.942672047759174</data>
+      <data key="d6">0</data>
+      <data key="d7">31</data>
+      <data key="d8">15.545</data>
+    </edge>
+    <edge source="0" target="26" id="0">
+      <data key="d4">LINESTRING (4.413668656648142 52.1685496698004, 4.41362974289814 52.16856165285732)</data>
+      <data key="d5">4.8471789282320366</data>
+      <data key="d6">0</data>
+      <data key="d7">26</data>
+      <data key="d8">2.97</data>
+    </edge>
+    <edge source="0" target="28" id="0">
+      <data key="d4">LINESTRING (4.413713531648141 52.16857191464869, 4.4136745166481415 52.168599982552216, 4.4136606691481415 52.16859291423527, 4.41362974289814 52.16856165285732)</data>
+      <data key="d5">15.336443277361838</data>
+      <data key="d6">0</data>
+      <data key="d7">28</data>
+      <data key="d8">5.827</data>
+    </edge>
+    <edge source="1" target="2" id="0">
+      <data key="d4">LINESTRING (4.413596696023141 52.168515331568365, 4.413596717898141 52.168490787868414, 4.41361812727314 52.16846510223428)</data>
+      <data key="d5">9.690341120797159</data>
+      <data key="d6">1</data>
+      <data key="d7">2</data>
+      <data key="d8">5.773</data>
+    </edge>
+    <edge source="1" target="26" id="0">
+      <data key="d4">LINESTRING (4.413596696023141 52.168515331568365, 4.413668656648142 52.1685496698004)</data>
+      <data key="d5">10.149452806999314</data>
+      <data key="d6">1</data>
+      <data key="d7">26</data>
+      <data key="d8">6.218</data>
+    </edge>
+    <edge source="1" target="14" id="0">
+      <data key="d4">LINESTRING (4.413546128523141 52.16844934322693, 4.413550558523141 52.16845890774599, 4.413541587898142 52.168491643614985, 4.413550051648142 52.16850843619887, 4.413559664773141 52.16851405619205, 4.413596696023141 52.168515331568365)</data>
+      <data key="d5">16.62668114836778</data>
+      <data key="d6">1</data>
+      <data key="d7">14</data>
+      <data key="d8">8.108</data>
+    </edge>
+    <edge source="31" target="41" id="0">
+      <data key="d4">LINESTRING (4.4134689985231415 52.168462542136986, 4.41346511102314 52.16843450335454, 4.413448373523142 52.16840353827994)</data>
+      <data key="d5">11.02816582754868</data>
+      <data key="d6">31</data>
+      <data key="d7">41</data>
+      <data key="d8">6.71</data>
+    </edge>
+    <edge source="31" target="38" id="0">
+      <data key="d4">LINESTRING (4.413383893523142 52.16848062613876, 4.413382449773143 52.16849087649303, 4.4134240310231405 52.16847157997185, 4.4134689985231415 52.168462542136986)</data>
+      <data key="d5">12.93945112269325</data>
+      <data key="d6">31</data>
+      <data key="d7">38</data>
+      <data key="d8">6.143</data>
+    </edge>
+    <edge source="26" target="28" id="0">
+      <data key="d4">LINESTRING (4.413668656648142 52.1685496698004, 4.413713531648141 52.16857191464869)</data>
+      <data key="d5">6.423007994073041</data>
+      <data key="d6">26</data>
+      <data key="d7">28</data>
+      <data key="d8">3.935</data>
+    </edge>
+    <edge source="2" target="30" id="0">
+      <data key="d4">LINESTRING (4.41361812727314 52.16846510223428, 4.413648944148142 52.168478668414345, 4.4136929622731405 52.16848854981797)</data>
+      <data key="d5">9.440639708095855</data>
+      <data key="d6">2</data>
+      <data key="d7">30</data>
+      <data key="d8">5.731</data>
+    </edge>
+    <edge source="2" target="14" id="0">
+      <data key="d4">LINESTRING (4.413546128523141 52.16844934322693, 4.41358310352314 52.16845199527568, 4.41361812727314 52.16846510223428)</data>
+      <data key="d5">8.71134655186215</data>
+      <data key="d6">2</data>
+      <data key="d7">14</data>
+      <data key="d8">5.214</data>
+    </edge>
+    <edge source="2" target="53" id="0">
+      <data key="d4">LINESTRING (4.413650118523141 52.168406181864526, 4.413631256023142 52.16841742325925, 4.413640907898142 52.16842211693664, 4.413638677273142 52.16844152474088, 4.41361812727314 52.16846510223428)</data>
+      <data key="d5">12.682443432195557</data>
+      <data key="d6">2</data>
+      <data key="d7">53</data>
+      <data key="d8">6.905</data>
+    </edge>
+    <edge source="14" target="31" id="0">
+      <data key="d4">LINESTRING (4.4134689985231415 52.168462542136986, 4.413546128523141 52.16844934322693)</data>
+      <data key="d5">8.913996492210778</data>
+      <data key="d6">14</data>
+      <data key="d7">31</data>
+      <data key="d8">5.461</data>
+    </edge>
+    <edge source="53" target="56" id="0">
+      <data key="d4">LINESTRING (4.4137225485231415 52.16837133389049, 4.413678514148142 52.16837876969886, 4.413650118523141 52.168406181864526)</data>
+      <data key="d5">10.978720242302344</data>
+      <data key="d6">53</data>
+      <data key="d7">56</data>
+      <data key="d8">6.278</data>
+    </edge>
+    <edge source="3" target="4" id="0">
+      <data key="d4">LINESTRING (4.4133230847731415 52.168372451608406, 4.413246173523142 52.16838328788052)</data>
+      <data key="d5">8.78471106896007</data>
+      <data key="d6">3</data>
+      <data key="d7">4</data>
+      <data key="d8">5.382</data>
+    </edge>
+    <edge source="3" target="5" id="0">
+      <data key="d4">LINESTRING (4.413386132273142 52.16836359051628, 4.4133230847731415 52.168372451608406)</data>
+      <data key="d5">7.200322330898933</data>
+      <data key="d6">3</data>
+      <data key="d7">5</data>
+      <data key="d8">4.411</data>
+    </edge>
+    <edge source="3" target="40" id="0">
+      <data key="d4">LINESTRING (4.4133230847731415 52.168372451608406, 4.41333794477314 52.16842939464244)</data>
+      <data key="d5">10.466503548906697</data>
+      <data key="d6">3</data>
+      <data key="d7">40</data>
+      <data key="d8">6.412</data>
+    </edge>
+    <edge source="3" target="8" id="0">
+      <data key="d4">LINESTRING (4.4133123397731415 52.16834354128811, 4.4133230847731415 52.168372451608406)</data>
+      <data key="d5">5.38172122488721</data>
+      <data key="d6">3</data>
+      <data key="d7">8</data>
+      <data key="d8">3.297</data>
+    </edge>
+    <edge source="4" target="9" id="0">
+      <data key="d4">LINESTRING (4.41323478539814 52.16835451800792, 4.413246173523142 52.16838328788052)</data>
+      <data key="d5">5.373311244885058</data>
+      <data key="d6">4</data>
+      <data key="d7">9</data>
+      <data key="d8">3.292</data>
+    </edge>
+    <edge source="4" target="37" id="0">
+      <data key="d4">LINESTRING (4.413246173523142 52.16838328788052, 4.41325222164814 52.168408339898505, 4.413243912898141 52.168445905783535, 4.413252444773141 52.16845777991998)</data>
+      <data key="d5">13.832071076281702</data>
+      <data key="d6">4</data>
+      <data key="d7">37</data>
+      <data key="d8">8.294</data>
+    </edge>
+    <edge source="5" target="7" id="0">
+      <data key="d4">LINESTRING (4.413443267898142 52.16835578522025, 4.413386132273142 52.16836359051628)</data>
+      <data key="d5">6.516162363061217</data>
+      <data key="d6">5</data>
+      <data key="d7">7</data>
+      <data key="d8">3.992</data>
+    </edge>
+    <edge source="5" target="42" id="0">
+      <data key="d4">LINESTRING (4.413392995398141 52.16841089952779, 4.413386132273142 52.16836359051628)</data>
+      <data key="d5">8.620334493751368</data>
+      <data key="d6">5</data>
+      <data key="d7">42</data>
+      <data key="d8">5.281</data>
+    </edge>
+    <edge source="5" target="10" id="0">
+      <data key="d4">LINESTRING (4.413386132273142 52.16836359051628, 4.413375476023141 52.16833473512686)</data>
+      <data key="d5">5.369809135190969</data>
+      <data key="d6">5</data>
+      <data key="d7">10</data>
+      <data key="d8">3.29</data>
+    </edge>
+    <edge source="40" target="42" id="0">
+      <data key="d4">LINESTRING (4.413392995398141 52.16841089952779, 4.41333794477314 52.16842939464244)</data>
+      <data key="d5">6.98734714009145</data>
+      <data key="d6">40</data>
+      <data key="d7">42</data>
+      <data key="d8">4.281</data>
+    </edge>
+    <edge source="8" target="9" id="0">
+      <data key="d4">LINESTRING (4.4133123397731415 52.16834354128811, 4.41323478539814 52.16835451800792)</data>
+      <data key="d5">8.86019715106781</data>
+      <data key="d6">8</data>
+      <data key="d7">9</data>
+      <data key="d8">5.428</data>
+    </edge>
+    <edge source="8" target="10" id="0">
+      <data key="d4">LINESTRING (4.413375476023141 52.16833473512686, 4.4133123397731415 52.16834354128811)</data>
+      <data key="d5">7.207735144118991</data>
+      <data key="d6">8</data>
+      <data key="d7">10</data>
+      <data key="d8">4.416</data>
+    </edge>
+    <edge source="8" target="47" id="0">
+      <data key="d4">LINESTRING (4.4133123397731415 52.16834354128811, 4.4133065735231405 52.16832235345072, 4.4132920597731395 52.16830920851506, 4.413303737898142 52.16830387938881, 4.413286195398142 52.16826568916068, 4.413280037273142 52.168266682269774, 4.413276925398142 52.168247284753996)</data>
+      <data key="d5">19.848008089950547</data>
+      <data key="d6">8</data>
+      <data key="d7">47</data>
+      <data key="d8">10.972</data>
+    </edge>
+    <edge source="9" target="39" id="0">
+      <data key="d4">LINESTRING (4.41320051477314 52.168248086321874, 4.413202622898141 52.16827727774891, 4.41321961602314 52.16829523831001, 4.41323478539814 52.16835451800792)</data>
+      <data key="d5">19.96294583016443</data>
+      <data key="d6">9</data>
+      <data key="d7">39</data>
+      <data key="d8">12.063</data>
+    </edge>
+    <edge source="37" target="38" id="0">
+      <data key="d4">LINESTRING (4.413252444773141 52.16845777991998, 4.41325786602314 52.16846514309014, 4.413313739773141 52.16848907868463, 4.413383893523142 52.16848062613876)</data>
+      <data key="d5">17.01181761975994</data>
+      <data key="d6">37</data>
+      <data key="d7">38</data>
+      <data key="d8">9.318</data>
+    </edge>
+    <edge source="37" target="40" id="0">
+      <data key="d4">LINESTRING (4.41333794477314 52.16842939464244, 4.413252444773141 52.16845777991998)</data>
+      <data key="d5">10.822669967479095</data>
+      <data key="d6">37</data>
+      <data key="d7">40</data>
+      <data key="d8">6.631</data>
+    </edge>
+    <edge source="7" target="13" id="0">
+      <data key="d4">LINESTRING (4.413443267898142 52.16835578522025, 4.413433250398143 52.16834154765614, 4.413434337898142 52.16833000084479)</data>
+      <data key="d5">4.9136093847671365</data>
+      <data key="d6">7</data>
+      <data key="d7">13</data>
+      <data key="d8">2.931</data>
+    </edge>
+    <edge source="7" target="41" id="0">
+      <data key="d4">LINESTRING (4.413448373523142 52.16840353827994, 4.413443267898142 52.16835578522025)</data>
+      <data key="d5">8.685619178293559</data>
+      <data key="d6">7</data>
+      <data key="d7">41</data>
+      <data key="d8">5.321</data>
+    </edge>
+    <edge source="10" target="13" id="0">
+      <data key="d4">LINESTRING (4.413434337898142 52.16833000084479, 4.413375476023141 52.16833473512686)</data>
+      <data key="d5">6.608572609355221</data>
+      <data key="d6">10</data>
+      <data key="d7">13</data>
+      <data key="d8">4.049</data>
+    </edge>
+    <edge source="10" target="43" id="0">
+      <data key="d4">LINESTRING (4.413375476023141 52.16833473512686, 4.41337185164814 52.168312668530014, 4.413395328523142 52.16827496137521, 4.413389482273141 52.16826960526158, 4.413392942898143 52.16825743964066)</data>
+      <data key="d5">14.762206462355168</data>
+      <data key="d6">10</data>
+      <data key="d7">43</data>
+      <data key="d8">8.677</data>
+    </edge>
+    <edge source="6" target="7" id="0">
+      <data key="d4">LINESTRING (4.413536338523142 52.168343473989864, 4.413510888523141 52.16834310701341, 4.413443267898142 52.16835578522025)</data>
+      <data key="d5">10.705202505701882</data>
+      <data key="d6">6</data>
+      <data key="d7">7</data>
+      <data key="d8">6.493</data>
+    </edge>
+    <edge source="6" target="14" id="0">
+      <data key="d4">LINESTRING (4.413536338523142 52.168343473989864, 4.41352350477314 52.168392197885886, 4.413546128523141 52.16844934322693)</data>
+      <data key="d5">19.63092923954987</data>
+      <data key="d6">6</data>
+      <data key="d7">14</data>
+      <data key="d8">11.791</data>
+    </edge>
+    <edge source="6" target="52" id="0">
+      <data key="d4">LINESTRING (4.4135778303981406 52.168347714384, 4.413562823523142 52.16834922258003, 4.413536338523142 52.168343473989864)</data>
+      <data key="d5">4.820298799665091</data>
+      <data key="d6">6</data>
+      <data key="d7">52</data>
+      <data key="d8">2.869</data>
+    </edge>
+    <edge source="52" target="53" id="0">
+      <data key="d4">LINESTRING (4.413650118523141 52.168406181864526, 4.413589824773142 52.16838392125986, 4.4135778303981406 52.168347714384)</data>
+      <data key="d5">14.539750882086718</data>
+      <data key="d6">52</data>
+      <data key="d7">53</data>
+      <data key="d8">8.159</data>
+    </edge>
+    <edge source="13" target="32" id="0">
+      <data key="d4">LINESTRING (4.413434337898142 52.16833000084479, 4.413448645398141 52.16828135905018)</data>
+      <data key="d5">8.970809785756824</data>
+      <data key="d6">13</data>
+      <data key="d7">32</data>
+      <data key="d8">5.496</data>
+    </edge>
+    <edge source="41" target="42" id="0">
+      <data key="d4">LINESTRING (4.413448373523142 52.16840353827994, 4.413392995398141 52.16841089952779)</data>
+      <data key="d5">6.307780407086429</data>
+      <data key="d6">41</data>
+      <data key="d7">42</data>
+      <data key="d8">3.865</data>
+    </edge>
+    <edge source="39" target="47" id="0">
+      <data key="d4">LINESTRING (4.41320051477314 52.168248086321874, 4.413276925398142 52.168247284753996)</data>
+      <data key="d5">8.507235884957321</data>
+      <data key="d6">39</data>
+      <data key="d7">47</data>
+      <data key="d8">5.212</data>
+    </edge>
+    <edge source="43" target="47" id="0">
+      <data key="d4">LINESTRING (4.413276925398142 52.168247284753996, 4.413345445398141 52.16825028460704, 4.413392942898143 52.16825743964066)</data>
+      <data key="d5">13.091553225080698</data>
+      <data key="d6">43</data>
+      <data key="d7">47</data>
+      <data key="d8">7.993</data>
+    </edge>
+    <edge source="11" target="12" id="0">
+      <data key="d4">LINESTRING (4.413581415398141 52.16834351022738, 4.413558004773141 52.168331454309076, 4.41351058977314 52.16833038218435)</data>
+      <data key="d5">8.684641482173081</data>
+      <data key="d6">11</data>
+      <data key="d7">12</data>
+      <data key="d8">5.046</data>
+    </edge>
+    <edge source="11" target="52" id="0">
+      <data key="d4">LINESTRING (4.4135778303981406 52.168347714384, 4.413581415398141 52.16834351022738)</data>
+      <data key="d5">0.8610996299238624</data>
+      <data key="d6">11</data>
+      <data key="d7">52</data>
+      <data key="d8">0.528</data>
+    </edge>
+    <edge source="11" target="54" id="0">
+      <data key="d4">LINESTRING (4.413581415398141 52.16834351022738, 4.413606072273143 52.16832655960809, 4.413640039773141 52.16831945639604)</data>
+      <data key="d5">8.117909850883937</data>
+      <data key="d6">11</data>
+      <data key="d7">54</data>
+      <data key="d8">4.81</data>
+    </edge>
+    <edge source="12" target="13" id="0">
+      <data key="d4">LINESTRING (4.41351058977314 52.16833038218435, 4.413434337898142 52.16833000084479)</data>
+      <data key="d5">8.488602059407846</data>
+      <data key="d6">12</data>
+      <data key="d7">13</data>
+      <data key="d8">5.201</data>
+    </edge>
+    <edge source="12" target="44" id="0">
+      <data key="d4">LINESTRING (4.41347972852314 52.168286895378806, 4.413502764773142 52.168291598492665, 4.413497612273141 52.168303636687526, 4.413512744773142 52.16830529591712, 4.41351058977314 52.16833038218435)</data>
+      <data key="d5">11.23225728647671</data>
+      <data key="d6">12</data>
+      <data key="d7">44</data>
+      <data key="d8">5.274</data>
+    </edge>
+    <edge source="54" target="55" id="0">
+      <data key="d4">LINESTRING (4.413640039773141 52.16831945639604, 4.413668626648141 52.16831530727866)</data>
+      <data key="d5">3.2701628060462893</data>
+      <data key="d6">54</data>
+      <data key="d7">55</data>
+      <data key="d8">2.003</data>
+    </edge>
+    <edge source="32" target="43" id="0">
+      <data key="d4">LINESTRING (4.413392942898143 52.16825743964066, 4.413407111023141 52.168259635694994, 4.413426011648142 52.16827353924112, 4.413448645398141 52.16828135905018)</data>
+      <data key="d5">7.804094014619519</data>
+      <data key="d6">32</data>
+      <data key="d7">43</data>
+      <data key="d8">4.637</data>
+    </edge>
+    <edge source="32" target="44" id="0">
+      <data key="d4">LINESTRING (4.413448645398141 52.16828135905018, 4.41347972852314 52.168286895378806)</data>
+      <data key="d5">3.603103689658763</data>
+      <data key="d6">32</data>
+      <data key="d7">44</data>
+      <data key="d8">2.207</data>
+    </edge>
+    <edge source="15" target="16" id="0">
+      <data key="d4">LINESTRING (4.413712159148142 52.16823920306968, 4.413769112898141 52.1682385274497)</data>
+      <data key="d5">6.3412481455364444</data>
+      <data key="d6">15</data>
+      <data key="d7">16</data>
+      <data key="d8">3.885</data>
+    </edge>
+    <edge source="15" target="17" id="0">
+      <data key="d4">LINESTRING (4.413663786648143 52.168225775482945, 4.413712159148142 52.16823920306968)</data>
+      <data key="d5">5.910609306698959</data>
+      <data key="d6">15</data>
+      <data key="d7">17</data>
+      <data key="d8">3.621</data>
+    </edge>
+    <edge source="15" target="23" id="0">
+      <data key="d4">LINESTRING (4.413676243523141 52.168301817009294, 4.413673422898141 52.16829373383908, 4.413712159148142 52.16823920306968)</data>
+      <data key="d5">12.295978742624298</data>
+      <data key="d6">15</data>
+      <data key="d7">23</data>
+      <data key="d8">7.381</data>
+    </edge>
+    <edge source="15" target="51" id="0">
+      <data key="d4">LINESTRING (4.413712159148142 52.16823920306968, 4.413738636648141 52.16820855734521, 4.413797747273142 52.16816517922077)</data>
+      <data key="d5">16.55545429993248</data>
+      <data key="d6">15</data>
+      <data key="d7">51</data>
+      <data key="d8">10.091</data>
+    </edge>
+    <edge source="16" target="34" id="0">
+      <data key="d4">LINESTRING (4.413769112898141 52.1682385274497, 4.41378845039814 52.16823517409736, 4.41380564664814 52.168225237311184)</data>
+      <data key="d5">4.867046166956106</data>
+      <data key="d6">16</data>
+      <data key="d7">34</data>
+      <data key="d8">2.897</data>
+    </edge>
+    <edge source="17" target="20" id="0">
+      <data key="d4">LINESTRING (4.413571801648142 52.16819585840873, 4.413663786648143 52.168225775482945)</data>
+      <data key="d5">11.590291391644639</data>
+      <data key="d6">17</data>
+      <data key="d7">20</data>
+      <data key="d8">7.101</data>
+    </edge>
+    <edge source="17" target="48" id="0">
+      <data key="d4">LINESTRING (4.413663786648143 52.168225775482945, 4.413664975398142 52.16818154631018)</data>
+      <data key="d5">8.028490126608816</data>
+      <data key="d6">17</data>
+      <data key="d7">48</data>
+      <data key="d8">4.919</data>
+    </edge>
+    <edge source="17" target="54" id="0">
+      <data key="d4">LINESTRING (4.413640039773141 52.16831945639604, 4.413635552273141 52.1683117989214, 4.413624008523142 52.168311380797, 4.413600949148141 52.168299146749476, 4.41364132039814 52.16827555484361, 4.413663786648143 52.168225775482945)</data>
+      <data key="d5">21.74003033568343</data>
+      <data key="d6">17</data>
+      <data key="d7">54</data>
+      <data key="d8">10.542</data>
+    </edge>
+    <edge source="23" target="55" id="0">
+      <data key="d4">LINESTRING (4.413668626648141 52.16831530727866, 4.413676243523141 52.168301817009294)</data>
+      <data key="d5">2.591091560232838</data>
+      <data key="d6">23</data>
+      <data key="d7">55</data>
+      <data key="d8">1.587</data>
+    </edge>
+    <edge source="34" target="35" id="0">
+      <data key="d4">LINESTRING (4.41380564664814 52.168225237311184, 4.413840869148141 52.168193299484756)</data>
+      <data key="d5">6.998152485547343</data>
+      <data key="d6">34</data>
+      <data key="d7">35</data>
+      <data key="d8">4.287</data>
+    </edge>
+    <edge source="20" target="21" id="0">
+      <data key="d4">LINESTRING (4.413511587898142 52.16819244862299, 4.413554568523141 52.16819144886353, 4.413571801648142 52.16819585840873)</data>
+      <data key="d5">6.866648382772482</data>
+      <data key="d6">20</data>
+      <data key="d7">21</data>
+      <data key="d8">4.124</data>
+    </edge>
+    <edge source="20" target="44" id="0">
+      <data key="d4">LINESTRING (4.413571801648142 52.16819585840873, 4.41353070727314 52.16823506772448, 4.41352242414814 52.168250336933674, 4.41347972852314 52.168286895378806)</data>
+      <data key="d5">19.54235285096489</data>
+      <data key="d6">20</data>
+      <data key="d7">44</data>
+      <data key="d8">11.912</data>
+    </edge>
+    <edge source="20" target="46" id="0">
+      <data key="d4">LINESTRING (4.413573135398141 52.16819343803748, 4.413571801648142 52.16819585840873)</data>
+      <data key="d5">0.4636990008119006</data>
+      <data key="d6">20</data>
+      <data key="d7">46</data>
+      <data key="d8">0.284</data>
+    </edge>
+    <edge source="48" target="49" id="0">
+      <data key="d4">LINESTRING (4.413664975398142 52.16818154631018, 4.413662884773142 52.16816453481134, 4.413631312898142 52.16810519018356)</data>
+      <data key="d5">14.425949776660099</data>
+      <data key="d6">48</data>
+      <data key="d7">49</data>
+      <data key="d8">8.795</data>
+    </edge>
+    <edge source="48" target="51" id="0">
+      <data key="d4">LINESTRING (4.413797747273142 52.16816517922077, 4.413724262898141 52.16817735198143, 4.413664975398142 52.16818154631018)</data>
+      <data key="d5">15.11694601211683</data>
+      <data key="d6">48</data>
+      <data key="d7">51</data>
+      <data key="d8">9.236</data>
+    </edge>
+    <edge source="18" target="19" id="0">
+      <data key="d4">LINESTRING (4.413299278523142 52.16817238106579, 4.413378431648142 52.16815489642961, 4.413472926648141 52.16817406945464)</data>
+      <data key="d5">20.4450849433438</data>
+      <data key="d6">18</data>
+      <data key="d7">19</data>
+      <data key="d8">11.844</data>
+    </edge>
+    <edge source="18" target="39" id="0">
+      <data key="d4">LINESTRING (4.41320051477314 52.168248086321874, 4.413198085398142 52.168243486248684, 4.4132227753981415 52.16823861484896, 4.413285562898142 52.16823768048316, 4.413332083523141 52.16822571108627, 4.413323886023141 52.16820435286078, 4.413299278523142 52.16817238106579)</data>
+      <data key="d5">26.771361398502556</data>
+      <data key="d6">18</data>
+      <data key="d7">39</data>
+      <data key="d8">10.781</data>
+    </edge>
+    <edge source="19" target="21" id="0">
+      <data key="d4">LINESTRING (4.413472926648141 52.16817406945464, 4.413511587898142 52.16819244862299)</data>
+      <data key="d5">5.44512687212498</data>
+      <data key="d6">19</data>
+      <data key="d7">21</data>
+      <data key="d8">3.336</data>
+    </edge>
+    <edge source="19" target="45" id="0">
+      <data key="d4">LINESTRING (4.413522519773142 52.16813969191108, 4.413472926648141 52.16817406945464)</data>
+      <data key="d5">8.331122857658254</data>
+      <data key="d6">19</data>
+      <data key="d7">45</data>
+      <data key="d8">5.104</data>
+    </edge>
+    <edge source="21" target="32" id="0">
+      <data key="d4">LINESTRING (4.413448645398141 52.16828135905018, 4.413436889773141 52.16825494286336, 4.4134395691481405 52.16824556029786, 4.41345308602314 52.16823500102584, 4.413467607898141 52.16823582038522, 4.413511587898142 52.16819244862299)</data>
+      <data key="d5">20.028676493964074</data>
+      <data key="d6">21</data>
+      <data key="d7">32</data>
+      <data key="d8">10.778</data>
+    </edge>
+    <edge source="45" target="46" id="0">
+      <data key="d4">LINESTRING (4.413522519773142 52.16813969191108, 4.413574529773141 52.16818940681213, 4.413573135398141 52.16819343803748)</data>
+      <data key="d5">11.468752036322003</data>
+      <data key="d6">45</data>
+      <data key="d7">46</data>
+      <data key="d8">6.902</data>
+    </edge>
+    <edge source="45" target="49" id="0">
+      <data key="d4">LINESTRING (4.413631312898142 52.16810519018356, 4.413547265398141 52.16811960148233, 4.413546068523142 52.1681254434477, 4.413522519773142 52.16813969191108)</data>
+      <data key="d5">14.465797040193191</data>
+      <data key="d6">45</data>
+      <data key="d7">49</data>
+      <data key="d8">8.353</data>
+    </edge>
+    <edge source="46" target="48" id="0">
+      <data key="d4">LINESTRING (4.413664975398142 52.16818154631018, 4.413590828523142 52.16818568435875, 4.413573135398141 52.16819343803748)</data>
+      <data key="d5">10.708763816814457</data>
+      <data key="d6">46</data>
+      <data key="d7">48</data>
+      <data key="d8">6.402</data>
+    </edge>
+    <edge source="22" target="23" id="0">
+      <data key="d4">LINESTRING (4.413678549773142 52.1683020280776, 4.413676243523141 52.168301817009294)</data>
+      <data key="d5">0.259572909114953</data>
+      <data key="d6">22</data>
+      <data key="d7">23</data>
+      <data key="d8">0.159</data>
+    </edge>
+    <edge source="55" target="56" id="0">
+      <data key="d4">LINESTRING (4.413668626648141 52.16831530727866, 4.413718585398141 52.168357119739326, 4.4137225485231415 52.16837133389049)</data>
+      <data key="d5">12.025711442299846</data>
+      <data key="d6">55</data>
+      <data key="d7">56</data>
+      <data key="d8">7.234</data>
+    </edge>
+    <edge source="24" target="25" id="0">
+      <data key="d4">LINESTRING (4.413762701648141 52.168441096651925, 4.413754152898141 52.168475326731794, 4.413701431648141 52.168518296148875)</data>
+      <data key="d5">16.045509812746822</data>
+      <data key="d6">24</data>
+      <data key="d7">25</data>
+      <data key="d8">9.547</data>
+    </edge>
+    <edge source="24" target="30" id="0">
+      <data key="d4">LINESTRING (4.4136929622731405 52.16848854981797, 4.413725536023141 52.16845049864035, 4.413762701648141 52.168441096651925)</data>
+      <data key="d5">12.275587774268807</data>
+      <data key="d6">24</data>
+      <data key="d7">30</data>
+      <data key="d8">7.104</data>
+    </edge>
+    <edge source="24" target="57" id="0">
+      <data key="d4">LINESTRING (4.413774149773142 52.168379280536435, 4.413774340398141 52.168403743092185, 4.413762701648141 52.168441096651925)</data>
+      <data key="d5">11.342145701024263</data>
+      <data key="d6">24</data>
+      <data key="d7">57</data>
+      <data key="d8">6.918</data>
+    </edge>
+    <edge source="25" target="26" id="0">
+      <data key="d4">LINESTRING (4.413701431648141 52.168518296148875, 4.413668656648142 52.1685496698004)</data>
+      <data key="d5">6.762816203846676</data>
+      <data key="d6">25</data>
+      <data key="d7">26</data>
+      <data key="d8">4.143</data>
+    </edge>
+    <edge source="25" target="30" id="0">
+      <data key="d4">LINESTRING (4.413701431648141 52.168518296148875, 4.413677367273141 52.16850752745627, 4.4136929622731405 52.16848854981797)</data>
+      <data key="d5">7.173187882860713</data>
+      <data key="d6">25</data>
+      <data key="d7">30</data>
+      <data key="d8">3.358</data>
+    </edge>
+    <edge source="25" target="27" id="0">
+      <data key="d4">LINESTRING (4.413760489773141 52.16853010872252, 4.4137552941481415 52.168527700010536, 4.413743965398141 52.16853702013671, 4.413701431648141 52.168518296148875)</data>
+      <data key="d5">8.663100850732679</data>
+      <data key="d6">25</data>
+      <data key="d7">27</data>
+      <data key="d8">4.237</data>
+    </edge>
+    <edge source="27" target="28" id="0">
+      <data key="d4">LINESTRING (4.413760489773141 52.16853010872252, 4.413713531648141 52.16857191464869)</data>
+      <data key="d5">9.213993188414236</data>
+      <data key="d6">27</data>
+      <data key="d7">28</data>
+      <data key="d8">5.645</data>
+    </edge>
+    <edge source="27" target="29" id="0">
+      <data key="d4">LINESTRING (4.41397506477314 52.16837614419177, 4.413836028523142 52.168471363603814, 4.413760489773141 52.16853010872252)</data>
+      <data key="d5">36.778544696398384</data>
+      <data key="d6">27</data>
+      <data key="d7">29</data>
+      <data key="d8">22.522</data>
+    </edge>
+    <edge source="29" target="33" id="0">
+      <data key="d4">LINESTRING (4.41397506477314 52.16837614419177, 4.413945059148142 52.16835227178239, 4.413917410398143 52.16830044305611, 4.413892372898142 52.1682849090286)</data>
+      <data key="d5">19.33272713074124</data>
+      <data key="d6">29</data>
+      <data key="d7">33</data>
+      <data key="d8">11.607</data>
+    </edge>
+    <edge source="29" target="36" id="0">
+      <data key="d4">LINESTRING (4.4139287516481405 52.16826405257936, 4.414018791648141 52.16832096674899, 4.414019472898141 52.16833399716977, 4.414029642898141 52.168340705572106, 4.41397506477314 52.16837614419177)</data>
+      <data key="d5">27.269840754788284</data>
+      <data key="d6">29</data>
+      <data key="d7">36</data>
+      <data key="d8">12.858</data>
+    </edge>
+    <edge source="33" target="34" id="0">
+      <data key="d4">LINESTRING (4.413892372898142 52.1682849090286, 4.413859072273142 52.16826737578047, 4.41380564664814 52.168225237311184)</data>
+      <data key="d5">14.573754599213608</data>
+      <data key="d6">33</data>
+      <data key="d7">34</data>
+      <data key="d8">8.889</data>
+    </edge>
+    <edge source="33" target="36" id="0">
+      <data key="d4">LINESTRING (4.4139287516481405 52.16826405257936, 4.413892372898142 52.1682849090286)</data>
+      <data key="d5">5.543349519004203</data>
+      <data key="d6">33</data>
+      <data key="d7">36</data>
+      <data key="d8">3.396</data>
+    </edge>
+    <edge source="33" target="57" id="0">
+      <data key="d4">LINESTRING (4.413892372898142 52.1682849090286, 4.41386809664814 52.16831075850015, 4.4138160022731405 52.168324839867466, 4.413795514773141 52.16836726573198, 4.413774149773142 52.168379280536435)</data>
+      <data key="d5">23.009039492639893</data>
+      <data key="d6">33</data>
+      <data key="d7">57</data>
+      <data key="d8">13.234</data>
+    </edge>
+    <edge source="38" target="40" id="0">
+      <data key="d4">LINESTRING (4.41333794477314 52.16842939464244, 4.413355961023142 52.16845813725622, 4.413376346648141 52.16846586353518, 4.413383893523142 52.16848062613876)</data>
+      <data key="d5">11.064535946015054</data>
+      <data key="d6">38</data>
+      <data key="d7">40</data>
+      <data key="d8">6.502</data>
+    </edge>
+    <edge source="35" target="36" id="0">
+      <data key="d4">LINESTRING (4.413840869148141 52.168193299484756, 4.413865771648142 52.16822403390283, 4.4139287516481405 52.16826405257936)</data>
+      <data key="d5">16.323918429330753</data>
+      <data key="d6">35</data>
+      <data key="d7">36</data>
+      <data key="d8">9.89</data>
+    </edge>
+    <edge source="35" target="50" id="0">
+      <data key="d4">LINESTRING (4.413840869148141 52.168193299484756, 4.41382717352314 52.16816203766611)</data>
+      <data key="d5">5.875140320743707</data>
+      <data key="d6">35</data>
+      <data key="d7">50</data>
+      <data key="d8">3.599</data>
+    </edge>
+    <edge source="50" target="51" id="0">
+      <data key="d4">LINESTRING (4.41382717352314 52.16816203766611, 4.413797747273142 52.16816517922077)</data>
+      <data key="d5">3.3249680524274092</data>
+      <data key="d6">50</data>
+      <data key="d7">51</data>
+      <data key="d8">2.037</data>
+    </edge>
+    <edge source="49" target="50" id="0">
+      <data key="d4">LINESTRING (4.41382717352314 52.16816203766611, 4.413817945398141 52.16814170487997, 4.41378331664814 52.16813271387789, 4.413748851648142 52.16810850815727, 4.413734916648142 52.16808260963641, 4.413727736023141 52.16808767502378, 4.413716879148141 52.168085904369676, 4.413631312898142 52.16810519018356)</data>
+      <data key="d5">31.41592406307177</data>
+      <data key="d6">49</data>
+      <data key="d7">50</data>
+      <data key="d8">14.778</data>
+    </edge>
+    <edge source="56" target="57" id="0">
+      <data key="d4">LINESTRING (4.413774149773142 52.168379280536435, 4.4137535328981405 52.168379538256616, 4.4137363141481405 52.16837066947448, 4.4137225485231415 52.16837133389049)</data>
+      <data key="d5">6.3356609526809935</data>
+      <data key="d6">56</data>
+      <data key="d7">57</data>
+      <data key="d8">3.628</data>
+    </edge>
+    <data key="d0">epsg:4326</data>
+  </graph>
+</graphml>
