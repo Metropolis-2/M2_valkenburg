@@ -39,8 +39,8 @@ def main():
     # convert to undirected graph
     G_undirected = ox.get_undirected(G)
 
-    orig = 37
-    dest = 28
+    orig = 2
+    dest = 49
     route = ox.shortest_path(G_undirected, orig, dest)
 
     # get lat and lon from route and turninfo
@@ -48,13 +48,14 @@ def main():
     turn_bool, *_ = get_turn_arrays(lats, lons)
 
     # get initial bearing
-    qdr = qdrdist(lats[0], lons[0], lats[1], lons[1])
+    #qdr = qdrdist(lats[0], lons[0], lats[1], lons[1])
     
-    acidx = '3'
+    acidx = 'B2'
+    scen_name = 'B2_1'
 
     # generate the scenario text and path
     scenario_lines, scenario_path = create_scenario_text(
-        acidx, lats, lons, turn_bool
+        acidx, lats, lons, turn_bool, scen_name
     )
 
     with open(scenario_path, "w") as f:
@@ -209,7 +210,7 @@ def get_turn_arrays(lats, lons, cutoff_angle=25):
     return turn_bool, turn_speed, turn_coords
 
 
-def create_scenario_text(acidx, lats, lons, turn_bool):
+def create_scenario_text(acidx, lats, lons, turn_bool, scen_name):
     """
     Creates the scenario text and file path for a given aircraft.
 
@@ -255,18 +256,18 @@ def create_scenario_text(acidx, lats, lons, turn_bool):
     scenario_lines.append("00:00:00>setrefpoint 491733,6830838")
     scenario_lines.append("00:00:00>setreflength 0.3")
     scenario_lines.append(
-        f"00:00:00>CRE R{acidx} M600 {lats[0]} {lons[0]} {achdg} {alt} 5"
+        f"00:00:00>CRE {acidx} M600 {lats[0]} {lons[0]} {achdg} {alt} 1"
     )
 
     # Create the add waypoints command
-    addwypoint_lines = [f"00:00:00>ADDWAYPOINTS R{acidx}"]
+    addwypoint_lines = [f"00:00:00>ADDWAYPOINTS {acidx}"]
     # add the rest of the lines as waypoints
     for i in range(1, len(lats)):
         # if turn_bool[i] or cruise_alt_changes[i]:
         if turn_bool[i]:
-            addwypoint_lines.append(f"{lats[i]} {lons[i]},{alt},3,TURNSPD,1")
+            addwypoint_lines.append(f"{lats[i]} {lons[i]},{alt},1,TURNSPD,1")
         else:
-            addwypoint_lines.append(f"{lats[i]} {lons[i]},{alt},3,FLYBY, 0")
+            addwypoint_lines.append(f"{lats[i]} {lons[i]},{alt},1,FLYBY, 0")
 
     # add the last waypoint twice
     # addwypoint_lines.append(f"{lats[-1]} {lons[-1]},{alt},3,FLYBY, 0")
@@ -275,8 +276,8 @@ def create_scenario_text(acidx, lats, lons, turn_bool):
     scenario_lines.append(",".join(addwypoint_lines))
 
     # turn vnav and lnav on
-    scenario_lines.append(f"00:00:00>LNAV R{acidx} ON")
-    scenario_lines.append(f"00:00:00>VNAV R{acidx} ON")
+    scenario_lines.append(f"00:00:00>LNAV {acidx} ON")
+    scenario_lines.append(f"00:00:00>VNAV {acidx} ON")
 
     # # add the last line to delete the aircraft
     # scenario_lines.append(
@@ -284,13 +285,13 @@ def create_scenario_text(acidx, lats, lons, turn_bool):
     # )
 
     scenario_lines.append(
-        f"00:00:00>PAN R{acidx}"
+        f"00:00:00>PAN {acidx}"
     )
     scenario_lines.append(
         f"00:00:00>ZOOM 300"
     )
     # write the scenario to a file
-    scenario_path = path.join(path.dirname(__file__), f"scenarios/R{acidx}.scn")
+    scenario_path = path.join(path.dirname(__file__), f"scenarios/{scen_name}.scn")
 
     return scenario_lines, scenario_path
 

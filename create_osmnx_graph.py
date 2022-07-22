@@ -3,7 +3,7 @@ import geopandas as gpd
 import osmnx as ox
 import momepy as mm
 
-gdf = gpd.read_file('gis_data/cute_vienna/valk_streets.gpkg')
+gdf = gpd.read_file('gis_data/cute_vienna/valk_graph_simplified.gpkg')
 
 # %%
 G = mm.gdf_to_nx(gdf)
