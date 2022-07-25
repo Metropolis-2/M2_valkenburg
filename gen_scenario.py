@@ -39,8 +39,9 @@ def main():
     # convert to undirected graph
     G_undirected = ox.get_undirected(G)
 
-    orig = 2
-    dest = 49
+    orig = 28
+    dest = 48
+    alt = 40
     route = ox.shortest_path(G_undirected, orig, dest)
 
     # get lat and lon from route and turninfo
@@ -50,12 +51,12 @@ def main():
     # get initial bearing
     #qdr = qdrdist(lats[0], lons[0], lats[1], lons[1])
     
-    acidx = 'B2'
-    scen_name = 'B2_1'
+    acidx = 'A3'
+    scen_name = 'A3'
 
     # generate the scenario text and path
     scenario_lines, scenario_path = create_scenario_text(
-        acidx, lats, lons, turn_bool, scen_name
+        acidx, lats, lons, turn_bool, alt, scen_name
     )
 
     with open(scenario_path, "w") as f:
@@ -210,7 +211,7 @@ def get_turn_arrays(lats, lons, cutoff_angle=25):
     return turn_bool, turn_speed, turn_coords
 
 
-def create_scenario_text(acidx, lats, lons, turn_bool, scen_name):
+def create_scenario_text(acidx, lats, lons, turn_bool, alt, scen_name):
     """
     Creates the scenario text and file path for a given aircraft.
 
@@ -239,16 +240,11 @@ def create_scenario_text(acidx, lats, lons, turn_bool, scen_name):
         The file path to the scenario file scenarios/R{acidx}.scn.
     """
 
-    # set cruise altitudes
-    cruise_alts = np.array([30, 60, 90])
-
     # bearing of the first segment
     achdg = qdrdist(lats[0], lons[0], lats[1], lons[1])
 
     # start a list of strings
     scenario_lines = []
-
-    alt = np.random.choice(cruise_alts)
 
     # first lines
     scenario_lines.append("00:00:00>CASMACHTHR 0")
