@@ -16,16 +16,17 @@ from os import path
 import osmnx as ox
 import geopandas as gpd
 import numpy as np
+import random
 from shapely.geometry import LineString
+from os import path
+from matplotlib import pyplot as plt
 
 
 
-def main():
+def create_scenario(scen_name, num_ac, min_dist, unique_nodes = False):
     """
     Main function for the module.
     """
-    from os import path
-    from matplotlib import pyplot as plt
 
     # import common elements graph
     graph_path = path.join(
@@ -38,26 +39,52 @@ def main():
 
     # convert to undirected graph
     G_undirected = ox.get_undirected(G)
-
-    orig = 28
-    dest = 48
-    alt = 40
-    route = ox.shortest_path(G_undirected, orig, dest)
-
-    # get lat and lon from route and turninfo
-    lats, lons, _ = get_lat_lon_from_osm_route(G_undirected, route)
-    turn_bool, *_ = get_turn_arrays(lats, lons)
-
-    # get initial bearing
-    #qdr = qdrdist(lats[0], lons[0], lats[1], lons[1])
     
-    acidx = 'A3'
-    scen_name = 'A3'
-
-    # generate the scenario text and path
-    scenario_lines, scenario_path = create_scenario_text(
-        acidx, lats, lons, turn_bool, alt, scen_name
-    )
+    nodes_list = list(G.nodes.keys())
+    
+    scenario_lines = []
+    
+    scenario_lines.append("00:00:00>CASMACHTHR 0")
+    scenario_lines.append("00:00:00>VIS TRAFFIC PROJTRAFFIC")
+    
+    #scenario_lines.append("00:00:00>setrefpoint 491733,6830838")
+    #scenario_lines.append("00:00:00>setreflength 0.3")
+    
+    for i in range(num_ac):
+        
+        dist = 0
+        while dist < min_dist:
+            orig = random.choice(nodes_list)
+            dest = random.choice(nodes_list)
+            orig_lat, orig_lon = [G_undirected.nodes()[orig]['y'], G_undirected.nodes()[orig]['x']]
+            dest_lat, dest_lon = [G_undirected.nodes()[dest]['y'], G_undirected.nodes()[dest]['x']]
+            
+            dist = kwikdist(orig_lat, orig_lon, dest_lat, dest_lon)
+            
+        if unique_nodes:
+            nodes_list.pop(nodes_list.index(orig))
+            nodes_list.pop(nodes_list.index(dest))
+            
+            
+        alt = random.choice([30,50])
+        route = ox.shortest_path(G_undirected, orig, dest)
+    
+        # get lat and lon from route and turninfo
+        lats, lons, _ = get_lat_lon_from_osm_route(G_undirected, route)
+        turn_bool, *_ = get_turn_arrays(lats, lons)
+        
+        acidx = f'D{i+1}'
+    
+        # generate the scenario text and path
+        flight_lines = create_scenario_text(
+            acidx, lats, lons, turn_bool, alt, scen_name)
+        
+        scenario_lines.append('\n')
+        for line in flight_lines:
+            scenario_lines.append(line)
+        
+    # write the scenario to a file
+    scenario_path = path.join(path.dirname(__file__), f"scenarios/{scen_name}.scn")
 
     with open(scenario_path, "w") as f:
         for line in scenario_lines:
@@ -247,10 +274,6 @@ def create_scenario_text(acidx, lats, lons, turn_bool, alt, scen_name):
     scenario_lines = []
 
     # first lines
-    scenario_lines.append("00:00:00>CASMACHTHR 0")
-    scenario_lines.append("00:00:00>VIS TRAFFIC PROJTRAFFIC")
-    scenario_lines.append("00:00:00>setrefpoint 491733,6830838")
-    scenario_lines.append("00:00:00>setreflength 0.3")
     scenario_lines.append(
         f"00:00:00>CRE {acidx} M600 {lats[0]} {lons[0]} {achdg} {alt} 1"
     )
@@ -280,16 +303,14 @@ def create_scenario_text(acidx, lats, lons, turn_bool, alt, scen_name):
     #     f"00:00:00>R{acidx} ATDIST {lats[-1]} {lons[-1]} 0.01 DEL R{acidx}"
     # )
 
-    scenario_lines.append(
-        f"00:00:00>PAN {acidx}"
-    )
-    scenario_lines.append(
-        f"00:00:00>ZOOM 300"
-    )
-    # write the scenario to a file
-    scenario_path = path.join(path.dirname(__file__), f"scenarios/{scen_name}.scn")
+    # scenario_lines.append(
+    #     f"00:00:00>PAN {acidx}"
+    # )
+    # scenario_lines.append(
+    #     f"00:00:00>ZOOM 300"
+    # )
 
-    return scenario_lines, scenario_path
+    return scenario_lines
 
 """HELPER FUNCTIONS BELOW"""
 
@@ -325,6 +346,25 @@ def qdrdist(latd1, lond1, latd2, lond2):
 
     return qdr
 
+def kwikdist(lata, lona, latb, lonb):
+    """
+    Quick and dirty dist [nm]
+    In:
+        lat/lon, lat/lon [deg]
+    Out:
+        dist [nm]
+    """
+
+    re      = 6371000.  # radius earth [m]
+    dlat    = np.radians(latb - lata)
+    dlon    = np.radians(((lonb - lona)+180)%360-180)
+    cavelat = np.cos(np.radians(lata + latb) * 0.5)
+
+    dangle  = np.sqrt(dlat * dlat + dlon * dlon * cavelat * cavelat)
+    dist    = re * dangle
+
+    return dist
+
 
 def rwgs84(latd):
     """Calculate the earths radius with WGS'84 geoid definition
@@ -350,4 +390,4 @@ def rwgs84(latd):
     return r
 
 if __name__ == "__main__":
-    main()
+    create_scenario('test', 15, 50, True)
