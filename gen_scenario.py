@@ -410,5 +410,5 @@ def rwgs84(latd):
     return r
 
 if __name__ == "__main__":
-    #create_scenario('test', 10, 50, True)
-    print(get_flight_text(48, 44, 50, 'D10'))
+    create_scenario('test', 10, 50, True)
+    #print(get_flight_text(48, 44, 50, 'D10'))
