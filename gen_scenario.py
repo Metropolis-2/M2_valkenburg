@@ -43,9 +43,10 @@ def create_scenario(scen_name, num_ac, min_dist, unique_nodes = False):
     nodes_list = list(G.nodes.keys())
     
     scenario_lines = []
+    cre_lines = []
     
-    scenario_lines.append("00:00:00>CASMACHTHR 0")
-    scenario_lines.append("00:00:00>VIS TRAFFIC PROJTRAFFIC")
+    cre_lines.append("00:00:00>CASMACHTHR 0")
+    cre_lines.append("00:00:00>VIS TRAFFIC PROJTRAFFIC\n")
     
     #scenario_lines.append("00:00:00>setrefpoint 491733,6830838")
     #scenario_lines.append("00:00:00>setreflength 0.3")
@@ -76,8 +77,10 @@ def create_scenario(scen_name, num_ac, min_dist, unique_nodes = False):
         acidx = f'D{i+1}'
     
         # generate the scenario text and path
-        flight_lines = create_scenario_text(
+        cre_line, flight_lines = create_scenario_text(
             acidx, lats, lons, turn_bool, alt, scen_name)
+        
+        cre_lines.append(cre_line)
         
         scenario_lines.append('\n')
         for line in flight_lines:
@@ -87,9 +90,38 @@ def create_scenario(scen_name, num_ac, min_dist, unique_nodes = False):
     scenario_path = path.join(path.dirname(__file__), f"scenarios/{scen_name}.scn")
 
     with open(scenario_path, "w") as f:
-        for line in scenario_lines:
+        for line in cre_lines:
             f.write(f"{line}\n")
+            
+        for line in scenario_lines:
+            f.write(f'{line}\n')
+            
+def get_flight_text(orig,dest,alt,acid):
+    # import common elements graph
+    graph_path = path.join(
+        path.dirname(__file__),
+        'gis_data',
+        'cute_vienna',
+        "valk_graph.graphml",
+    )
+    G = ox.load_graphml(graph_path)
+    
+    scen_name = 'a'
 
+    # convert to undirected graph
+    G_undirected = ox.get_undirected(G)
+    
+    route = ox.shortest_path(G_undirected, orig, dest)
+    
+    # get lat and lon from route and turninfo
+    lats, lons, _ = get_lat_lon_from_osm_route(G_undirected, route)
+    turn_bool, *_ = get_turn_arrays(lats, lons)
+
+    # generate the scenario text and path
+    cre_line, flight_lines = create_scenario_text(
+        acid, lats, lons, turn_bool, alt, scen_name)
+    
+    return cre_line, flight_lines
 
 def get_lat_lon_from_osm_route(G, route):
     """
@@ -274,12 +306,10 @@ def create_scenario_text(acidx, lats, lons, turn_bool, alt, scen_name):
     scenario_lines = []
 
     # first lines
-    scenario_lines.append(
-        f"00:00:00>CRE {acidx} M600 {lats[0]} {lons[0]} {achdg} {alt} 1"
-    )
+    cre_line = f"00:00:00>CRE {acidx} M600 {lats[0]} {lons[0]} {achdg} {alt} 0"
 
     # Create the add waypoints command
-    addwypoint_lines = [f"00:00:00>ADDWAYPOINTS {acidx}"]
+    addwypoint_lines = [f"00:02:00>ADDWAYPOINTS {acidx}"]
     # add the rest of the lines as waypoints
     for i in range(1, len(lats)):
         # if turn_bool[i] or cruise_alt_changes[i]:
@@ -295,22 +325,12 @@ def create_scenario_text(acidx, lats, lons, turn_bool, alt, scen_name):
     scenario_lines.append(",".join(addwypoint_lines))
 
     # turn vnav and lnav on
-    scenario_lines.append(f"00:00:00>LNAV {acidx} ON")
-    scenario_lines.append(f"00:00:00>VNAV {acidx} ON")
+    scenario_lines.append(f"00:02:00>SPD {acidx} 1")
+    scenario_lines.append(f"00:02:00>LNAV {acidx} ON")
+    scenario_lines.append(f"00:02:00>VNAV {acidx} ON")
+    scenario_lines.append(f'00:02:00>ATDIST {acidx} {lats[-1]} {lons[-1]} 0.002 DEL {acidx}')
 
-    # # add the last line to delete the aircraft
-    # scenario_lines.append(
-    #     f"00:00:00>R{acidx} ATDIST {lats[-1]} {lons[-1]} 0.01 DEL R{acidx}"
-    # )
-
-    # scenario_lines.append(
-    #     f"00:00:00>PAN {acidx}"
-    # )
-    # scenario_lines.append(
-    #     f"00:00:00>ZOOM 300"
-    # )
-
-    return scenario_lines
+    return cre_line, scenario_lines
 
 """HELPER FUNCTIONS BELOW"""
 
@@ -390,4 +410,5 @@ def rwgs84(latd):
     return r
 
 if __name__ == "__main__":
-    create_scenario('test', 15, 50, True)
+    #create_scenario('test', 10, 50, True)
+    print(get_flight_text(48, 44, 50, 'D10'))
